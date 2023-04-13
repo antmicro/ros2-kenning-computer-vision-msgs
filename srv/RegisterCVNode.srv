@@ -1,0 +1,7 @@
+string node_name                # Name of the CVNode to register with
+string prepare_service_name     # Name of the service to prepare CVNode for testing
+string process_service_name     # Name of the service to process the data with CVNode
+string cleanup_service_name     # Name of the service to cleanup CVNode's resources
+---
+bool status     # Status of the registration
+string message  # Message error if registration failed
