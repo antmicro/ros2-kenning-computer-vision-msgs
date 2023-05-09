@@ -10,10 +10,9 @@ find_package(builtin_interfaces REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-    "srv/RegisterCVNode.srv"
-    "srv/UnregisterCVNode.srv"
-    "srv/RuntimeProtocolSrv.srv"
     "msg/RuntimeProtocolMsg.msg"
+    "srv/ManageCVNode.srv"
+    "srv/RuntimeProtocolSrv.srv"
     DEPENDENCIES builtin_interfaces
 )
 
