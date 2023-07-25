@@ -5,17 +5,14 @@
 # Original image
 sensor_msgs/Image frame
 
-# Masks are byte arrays
-uint8[] masks
+# Masks
+MaskMsg[] masks
 
 # Boxes
-float32[] boxes
+BoxMsg[] boxes
 
 # Classes
 string[] classes
 
-# Scores
+# The 0-1 confidence scores
 float32[] scores
-
-# Dimensions to consider
-int64 num_dets
