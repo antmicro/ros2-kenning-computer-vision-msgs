@@ -2,16 +2,18 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 
-# Original image
+# A message representing results of instance segmentation results on a given image
+
+# Input image
 sensor_msgs/Image frame
 
-# Masks
+# Masks of detected objects
 MaskMsg[] masks
 
-# Boxes
+# Bounding boxes of detected objects
 BoxMsg[] boxes
 
-# Classes
+# Classes of detected objects
 string[] classes
 
 # The 0-1 confidence scores

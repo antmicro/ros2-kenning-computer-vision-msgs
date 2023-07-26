@@ -2,6 +2,8 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 
+# A message representing normalized coordinates of the bounding box in the image
+
 # The 0-1 range minimal value of the x-axis
 float32 xmin
 

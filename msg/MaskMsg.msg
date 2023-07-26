@@ -2,8 +2,10 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 
-# Mask data
+# A message representing instance segmentation mask for the object
+
+# Mask data - binary image representing the masked object
 uint8[] data
 
-# Dimensions of the mask
+# Dimensions of the mask - height and width
 int64[] dimension
