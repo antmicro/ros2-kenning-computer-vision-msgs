@@ -2,6 +2,8 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 
+# A service representing communication of the ROS 2 node with Kenning using RuntimeProtocol
+
 RuntimeProtocolMsg request
 ---
 RuntimeProtocolMsg response

@@ -2,6 +2,8 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 
+# A message for registering nodes for Computer Vision algorithms in the application
+
 uint8 REGISTER = 0   # Enum indicating that message type is 'register'
 uint8 UNREGISTER = 1 # Enum indicating that message type is 'unregister'
 
