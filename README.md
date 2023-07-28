@@ -2,11 +2,11 @@
 
 Copyright (c) 2022-2023 [Antmicro](https://www.antmicro.com)
 
-A repository containing messages and services for ROS 2 integration with [Kenning](https://github.com/antmicro/kenning) framework for computer vision applications.
+A repository containing messages and services for ROS 2 integration with the [Kenning](https://github.com/antmicro/kenning) framework for computer vision applications.
 
 ## Building the package
 
-This package was tested with [ROS 2 Humble](https://docs.ros.org/en/humble/index.html) environment - follow [installation instructions](https://docs.ros.org/en/humble/Installation.html) for your system.
+This package was tested with the [ROS 2 Humble](https://docs.ros.org/en/humble/index.html) environment - follow the [installation instructions](https://docs.ros.org/en/humble/Installation.html) for your system.
 
 After installing ROS 2, follow the steps below to build the project:
 
@@ -25,7 +25,7 @@ After installing ROS 2, follow the steps below to build the project:
   colcon build
   ```
 
-After this, the package can be included in the other project using CMake with:
+Then, the package can be included in the other project using CMake with:
 
 ```cmake
 find_package(kenning_computer_vision_msgs REQUIRED)
@@ -43,9 +43,9 @@ ament_target_dependencies(dependent_target
 * `RuntimeProtocolMsg` - message defining a single message passed in Kenning's [RuntimeProtocol](https://antmicro.github.io/kenning/kenning-api.html#runtime-protocol-specification).
 * `SegmentationMsg` - a message containing Instance Segmentation (as well as object detection) data for a given frame.
 * `MaskMsg` - a message representing a single mask in the `SegmentationMsg` message
-* `BoxMsg` - a message representing a single bounding box in the `SegmentationMsg` message
+* `BoxMsg` - a message representing a single bounding box in the `SegmentationMsg` message.
 
 ## Service types defined in the package
 
-* `ManageCVNode` - service for configuring computer vision ROS 2 nodes based on Kenning framework.
+* `ManageCVNode` - service for configuring computer vision ROS 2 nodes based on the Kenning framework.
 * `RuntimeProtocolSrv` - service for performing [RuntimeProtocol-based](https://antmicro.github.io/kenning/kenning-api.html#runtime-protocol-specification) communication between the client and the server.
