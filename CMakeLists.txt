@@ -24,4 +24,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
     DEPENDENCIES builtin_interfaces sensor_msgs
 )
 
+install(DIRECTORY include/
+    DESTINATION include/${PROJECT_NAME})
+
 ament_package()
