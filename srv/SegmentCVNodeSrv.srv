@@ -1,0 +1,9 @@
+# Copyright 2022-2023 Antmicro <www.antmicro.com>
+#
+# SPDX-License-Identifier: Apache-2.0
+
+uint8 message_type        # Message type defined in 'kenning_computer_vision_msgs/runtime_msg_type.hpp'
+sensor_msgs/Image[] input # Input images for inference
+---
+uint8 message_type       # Message type defined in 'kenning_computer_vision_msgs/runtime_msg_type.hpp'
+SegmentationMsg[] output # Output segmentations

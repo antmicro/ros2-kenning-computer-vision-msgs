@@ -19,6 +19,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
     "msg/SegmentationMsg.msg"
     "msg/BoxMsg.msg"
     "msg/MaskMsg.msg"
+    "srv/SegmentCVNodeSrv.srv"
     "srv/ManageCVNode.srv"
     "srv/RuntimeProtocolSrv.srv"
     DEPENDENCIES builtin_interfaces sensor_msgs
