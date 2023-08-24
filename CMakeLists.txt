@@ -16,6 +16,7 @@ find_package(sensor_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
     "msg/RuntimeProtocolMsg.msg"
+    "msg/RuntimeMsgType.msg"
     "msg/SegmentationMsg.msg"
     "msg/BoxMsg.msg"
     "msg/MaskMsg.msg"

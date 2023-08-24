@@ -4,6 +4,8 @@
 
 # A service representing communication of the ROS 2 node with Kenning using RuntimeProtocol
 
-RuntimeProtocolMsg request
+uint8 message_type  # Message type defined in RuntimeMsgType
+byte[] data         # Data attached to the message
 ---
-RuntimeProtocolMsg response
+uint8 message_type  # Message type defined in RuntimeMsgType
+byte[] data         # Data attached to the message
