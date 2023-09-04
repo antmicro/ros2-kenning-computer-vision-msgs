@@ -9,8 +9,11 @@ uint8 UNREGISTER = 1 # Enum indicating that message type is 'unregister'
 
 uint8 type       # Enum representing message type (REGISTER/UNREGISTER)
 string node_name # Name of the CVNode to associate message with
-string srv_name  # Optional name of the service for communication
-                 # Used when registering the node
+
+# Used when registering the node
+string prepare_srv_name  # Name of the service for preparing the node
+string process_srv_name  # Name of the service for processing the input
+string cleanup_srv_name  # Name of the service for cleaning up the node
 ---
 bool status    # Status of the registration/unregistration
 string message # Error message if failed

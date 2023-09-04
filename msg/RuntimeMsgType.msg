@@ -13,5 +13,3 @@ uint8 PROCESS = 4     # Means data is being processed
 uint8 OUTPUT = 5      # Requests output from target
 uint8 STATS = 6       # Requests inference statistics from target
 uint8 IOSPEC = 7      # Contains io specification to load
-uint8 PREPROCESS = 8  # Requests preprocessing of data
-uint8 POSTPROCESS = 9 # Requests postprocessing of data

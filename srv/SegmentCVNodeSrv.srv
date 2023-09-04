@@ -2,8 +2,7 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 
-uint8 message_type        # Message type defined in 'kenning_computer_vision_msgs/runtime_msg_type.hpp'
 sensor_msgs/Image[] input # Input images for inference
 ---
-uint8 message_type       # Message type defined in 'kenning_computer_vision_msgs/runtime_msg_type.hpp'
+bool success             # True if inference was successful
 SegmentationMsg[] output # Output segmentations
