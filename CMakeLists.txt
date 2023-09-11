@@ -10,6 +10,7 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
 endif()
 
 find_package(ament_cmake REQUIRED)
+find_package(action_msgs REQUIRED)
 find_package(builtin_interfaces REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(sensor_msgs REQUIRED)
@@ -22,7 +23,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
     "srv/SegmentCVNodeSrv.srv"
     "srv/ManageCVNode.srv"
     "srv/RuntimeProtocolSrv.srv"
-    DEPENDENCIES builtin_interfaces sensor_msgs
+    "action/SegmentationAction.action"
+    DEPENDENCIES builtin_interfaces sensor_msgs action_msgs
 )
 
 ament_package()

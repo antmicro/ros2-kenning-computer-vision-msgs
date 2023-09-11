@@ -1,0 +1,9 @@
+# Copyright 2022-2023 Antmicro <www.antmicro.com>
+#
+# SPDX-License-Identifier: Apache-2.0
+
+sensor_msgs/Image[] input   # Input images for inference
+---
+bool success                # True if inference was successful
+SegmentationMsg[] output    # Output segmentation
+---
