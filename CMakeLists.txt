@@ -16,13 +16,11 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(sensor_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-    "msg/RuntimeMsgType.msg"
     "msg/SegmentationMsg.msg"
     "msg/BoxMsg.msg"
     "msg/MaskMsg.msg"
     "srv/SegmentCVNodeSrv.srv"
     "srv/ManageCVNode.srv"
-    "srv/RuntimeProtocolSrv.srv"
     "action/SegmentationAction.action"
     DEPENDENCIES builtin_interfaces sensor_msgs action_msgs
 )
