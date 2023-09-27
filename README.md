@@ -2,7 +2,7 @@
 
 Copyright (c) 2022-2023 [Antmicro](https://www.antmicro.com)
 
-A repository containing messages and services for ROS 2 integration with the [Kenning](https://github.com/antmicro/kenning) framework for computer vision applications.
+A repository containing messages, services and actions for ROS 2 integration with the [Kenning](https://github.com/antmicro/kenning) framework for computer vision applications.
 
 ## Building the package
 
@@ -40,12 +40,15 @@ ament_target_dependencies(dependent_target
 
 ## Message types defined in the package
 
-* `RuntimeProtocolMsg` - message defining a single message passed in Kenning's [RuntimeProtocol](https://antmicro.github.io/kenning/kenning-api.html#runtime-protocol-specification).
-* `SegmentationMsg` - a message containing Instance Segmentation (as well as object detection) data for a given frame.
-* `MaskMsg` - a message representing a single mask in the `SegmentationMsg` message
-* `BoxMsg` - a message representing a single bounding box in the `SegmentationMsg` message.
+* [SegmentationMsg](msg/SegmentationMsg.msg) - a message containing Instance Segmentation (as well as object detection) data for a given frame.
+* [MaskMsg](msg/MaskMsg.msg) - a message representing a single mask in the `SegmentationMsg` message.
+* [BoxMsg](msg/BoxMsg.msg) - a message representing a single bounding box in the `SegmentationMsg` message.
 
 ## Service types defined in the package
 
-* `ManageCVNode` - service for configuring computer vision ROS 2 nodes based on the Kenning framework.
-* `RuntimeProtocolSrv` - service for performing [RuntimeProtocol-based](https://antmicro.github.io/kenning/kenning-api.html#runtime-protocol-specification) communication between the client and the server.
+* [ManageCVNode](srv/ManageCVNode.srv) - service for configuring computer vision ROS 2 nodes based on the Kenning framework.
+* [SegmentCVNodeSrv](srv/SegmentCVNodeSrv.srv) - service to perform instance segmentation on a given batch of images.
+
+## Action types defined in the package
+
+* [SegmentationAction](action/SegmentationAction.action) - action to perform instance segmentation on a given batch of images.
