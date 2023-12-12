@@ -16,9 +16,11 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(sensor_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-    "msg/SegmentationMsg.msg"
     "msg/BoxMsg.msg"
     "msg/MaskMsg.msg"
+    "msg/SegmentationMsg.msg"
+    "msg/VideoMsg.msg"
+    "msg/VideoSegmentationMsg.msg"
     "srv/SegmentCVNodeSrv.srv"
     "srv/ManageCVNode.srv"
     "action/SegmentationAction.action"

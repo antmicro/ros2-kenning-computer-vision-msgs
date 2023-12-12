@@ -2,8 +2,8 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 
-sensor_msgs/Image[] input   # Input images for inference
+VideoMsg[] input                # Input images for inference
 ---
-bool success                # True if inference was successful
-SegmentationMsg[] output    # Output segmentation
+bool success                    # True if inference was successful
+VideoSegmentationMsg[] output   # Output segmentation
 ---
