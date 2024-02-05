@@ -20,6 +20,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
     "msg/MaskMsg.msg"
     "msg/SegmentationMsg.msg"
     "msg/VideoFrameMsg.msg"
+    "msg/FrameSegmentationMsg.msg"
     "srv/SegmentCVNodeSrv.srv"
     "srv/ManageCVNode.srv"
     "action/SegmentationAction.action"
