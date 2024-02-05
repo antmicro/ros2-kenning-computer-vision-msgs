@@ -1,9 +1,12 @@
-# Copyright 2022-2023 Antmicro <www.antmicro.com>
+# Copyright 2022-2024 Antmicro <www.antmicro.com>
 #
 # SPDX-License-Identifier: Apache-2.0
 
-VideoMsg[] input                # Input images for inference
+# An action representing instance segmentation inference on a single or sequence of image frames
+
+VideoFrameMsg[]   input         # Input images for inference
 ---
-bool success                    # True if inference was successful
-VideoSegmentationMsg[] output   # Output segmentation
+bool              success       # True if inference was successful
+VideoFrameMsg[]   frames        # Input frames
+SegmentationMsg[] segmentations # Instance segmentation predictions for frames
 ---
