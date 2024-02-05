@@ -1,6 +1,6 @@
 # ROS2 Computer Vision messages and services for Kenning
 
-Copyright (c) 2022-2023 [Antmicro](https://www.antmicro.com)
+Copyright (c) 2022-2024 [Antmicro](https://www.antmicro.com)
 
 A repository containing messages, services and actions for ROS 2 integration with the [Kenning](https://github.com/antmicro/kenning) framework for computer vision applications.
 
