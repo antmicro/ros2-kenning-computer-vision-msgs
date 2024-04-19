@@ -2,7 +2,7 @@
 
 Copyright (c) 2022-2024 [Antmicro](https://www.antmicro.com)
 
-A repository containing messages, services and actions for ROS 2 integration with the [Kenning](https://github.com/antmicro/kenning) framework for computer vision applications.
+Repository containing messages, services and actions for ROS 2 integration with the [Kenning](https://github.com/antmicro/kenning) framework for computer vision applications.
 
 ## Building the package
 
@@ -16,7 +16,7 @@ After installing ROS 2, follow the steps below to build the project:
   cd ros2-kenning-computer-vision-msgs/
   ```
 * Launch the configuration script (e.g. `setup.sh`) from ROS 2 to prepare the environment for building ROS 2 packages.
-  Assuming the ROS 2 was installed in the `/opt/ros` directory, run:
+  Assuming that ROS 2 was installed in the `/opt/ros` directory, run:
   ```
   source /opt/ros/setup.sh
   ```
@@ -25,7 +25,7 @@ After installing ROS 2, follow the steps below to build the project:
   colcon build
   ```
 
-Then, the package can be included in the other project using CMake with:
+Then, the package can be included in the target project using CMake with:
 
 ```cmake
 find_package(kenning_computer_vision_msgs REQUIRED)
@@ -47,8 +47,8 @@ ament_target_dependencies(dependent_target
 ## Service types defined in the package
 
 * [ManageCVNode](srv/ManageCVNode.srv) - service for configuring computer vision ROS 2 nodes based on the Kenning framework.
-* [SegmentCVNodeSrv](srv/SegmentCVNodeSrv.srv) - service to perform instance segmentation on a given batch of images.
+* [SegmentCVNodeSrv](srv/SegmentCVNodeSrv.srv) - service for performing instance segmentation on a batch of images.
 
 ## Action types defined in the package
 
-* [SegmentationAction](action/SegmentationAction.action) - action to perform instance segmentation on a given batch of images.
+* [SegmentationAction](action/SegmentationAction.action) - action to perform instance segmentation on a batch of images.
