@@ -16,6 +16,10 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(sensor_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
+    "msg/PoseMsg.msg"
+    "msg/FramePoseEstimationMsg.msg"
+    "msg/KeyPoint2dMsg.msg"
+    "msg/PoseEstimationMsg.msg"
     "msg/BoxMsg.msg"
     "msg/MaskMsg.msg"
     "msg/SegmentationMsg.msg"
