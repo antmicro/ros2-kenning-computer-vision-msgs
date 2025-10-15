@@ -8,4 +8,4 @@
 PoseMsg[] poses
 
 # A list of bounding box associated with poses
-BoxMsg[] boxes
+SegmentationMsg segmentation
