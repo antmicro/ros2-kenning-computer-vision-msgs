@@ -9,3 +9,6 @@ float32 x
 
 # y coordinate of the keypoint
 float32 y
+
+# id of the keypoints
+int32 id 
