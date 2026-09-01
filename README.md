@@ -42,7 +42,8 @@ ament_target_dependencies(dependent_target
 
 * [SegmentationMsg](msg/SegmentationMsg.msg) - a message containing Instance Segmentation (as well as object detection) data for a given frame.
 * [MaskMsg](msg/MaskMsg.msg) - a message representing a single mask in the `SegmentationMsg` message.
-* [BoxMsg](msg/BoxMsg.msg) - a message representing a single bounding box in the `SegmentationMsg` message.
+* [BoxMsg](msg/BoxMsg.msg) - a message representing a single bounding box in the `SegmentationMsg` or `DetectionMsg` message.
+* [DetectionMsg](msg/DetectionMsg.msg) - a message containing object Detection data for a given frame.
 
 ## Service types defined in the package
 
